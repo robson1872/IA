@@ -72,7 +72,10 @@ no bfs(int n){
 
 int main(){
    ios::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
-   no ans = bfs(3);
+   int n;
+   cout<<"Digite quantos missionarios e canibais(1 a 50):"<<endl;
+   cin>>n;
+   no ans = bfs(n);
    if(ans.lado == -1){
        cout<<"Sem solucao"<<endl;
    }
